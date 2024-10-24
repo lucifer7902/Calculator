@@ -74,8 +74,13 @@ int main() {
             case 'i':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
-                break;
+		if (a != 0) {
+    double    inverse = 1.0 / number;  // Calculate the inverse
+        printf("The inverse of %.2lf is %.2lf\n",a, inverse);
+    } else {
+        printf("Error: Division by zero is undefined.\n");
+    }
+     break;
             default:
                 printf("Invalid operation. Please try again.\n");
         }
